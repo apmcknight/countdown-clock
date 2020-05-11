@@ -87,6 +87,8 @@ p {
   margin-bottom: 0;
 }
 
+/* kEYFRAMES START HERE */
+
 @keyframes warp {
   0% {
     transform: scale(0.9, 1)
