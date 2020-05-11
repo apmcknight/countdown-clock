@@ -1,0 +1,23 @@
+{
+  "name": "countdown-clock",
+  "version": "1.0.0",
+  "description": "A countdown timer built in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server ./app -d false",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apmcknight/countdown-clock.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apmcknight/countdown-clock/issues"
+  },
+  "homepage": "https://github.com/apmcknight/countdown-clock#readme",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
+}
