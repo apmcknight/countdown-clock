@@ -1,0 +1,116 @@
+body {
+  background: #282c34;
+  color: #ffffff;
+}
+
+button {
+  margin-top: 25px;
+  margin-right: 10px;
+}
+
+.copy{
+  position: fixed;
+  bottom: 20px;
+  left: 11px;
+  text-align: left;
+  line-height: 1.5em;
+}
+
+.buttons > img { padding: 10px 15px 15px 15px };
+
+.buttons{z-index: 10;}
+
+.time{
+  padding-top: 280px;
+}
+
+.App {
+  text-align: center;
+}
+
+.time {
+  font-size: 9em;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #282c34;
+}
+
+
+/* ANIMATION */
+
+.circle-holder {
+  z-index: -100;
+  position: absolute;
+  margin-left: 455px;
+  margin-top: 130px;
+  width: 70vmin;
+  height: 70vmin;
+  animation: rotate 5s ease-in-out alternate-reverse;
+  animation-iteration-count: infinite;
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 100%;
+  border: 2vmin solid white;
+  mix-blend-mode: screen;
+  animation: warp 2s ease-in-out alternate infinite;
+}
+
+.red {
+  border-color: #f00;
+  animation-delay: -.5s;
+}
+
+.green {
+  border-color: #0f0;
+  animation-delay: -.9s;
+}
+
+.blue {
+  border-color: #00f;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+@keyframes warp {
+  0% {
+    transform: scale(0.9, 1)
+  }
+
+  ;
+
+  100% {
+    transform: scale(1, 0.9)
+  }
+
+  ;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) scale(0)
+  }
+
+  ;
+
+  100% {
+    transform: rotate(90deg) scale(5)
+  }
+
+  ;
+}
